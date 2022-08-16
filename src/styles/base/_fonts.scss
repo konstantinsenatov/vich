@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Futurabookc/Geometria_bold.eot');
+	src: local('Geometria_bold'), local('../fonts/Geometria_bold/Geometria_bold'),
+		url('../fonts/Geometria_bold/Geometria_bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria_bold/Geometria_bold.woff') format('woff'),
+		url('../fonts/Geometria_bold/Geometria_bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Futurabookc/Geometria_medium.eot');
+	src: local('Geometria_medium'), local('../fonts/Geometria_medium/Geometria_medium'),
+		url('../fonts/Geometria_medium/Geometria_medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria_medium/Geometria_medium.woff') format('woff'),
+		url('../fonts/Geometria_medium/Geometria_medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Geometria';
+	src: url('../fonts/Futurabookc/Geometria_regular.eot');
+	src: local('Geometria_regular'), local('../fonts/Geometria_regular/Geometria_regular'),
+		url('../fonts/Geometria_regular/Geometria_regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Geometria_regular/Geometria_regular.woff') format('woff'),
+		url('../fonts/Geometria_regular/Geometria_regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'FuturaBookC';
+	src: url('../fonts/Futurabookc/Futurabookc.eot');
+	src: local('Futurabookc'), local('../fonts/Futurabookc/Futurabookc'),
+		url('../fonts/Futurabookc/Futurabookc.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Futurabookc/Futurabookc.woff') format('woff'),
+		url('../fonts/Futurabookc/Futurabookc.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

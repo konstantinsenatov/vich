@@ -1,0 +1,25 @@
+extends layouts/default
+include helpers/mixins
+
+block variables
+	- const title = "Project title"
+
+block content
+	.wrapper
+		include ../blocks/modules/header/header
+		include ../blocks/modules/hero/hero
+		include ../blocks/modules/questions/questions
+		include ../blocks/modules/conclusion/conclusion
+		include ../blocks/modules/facts/facts
+		include ../blocks/modules/happened/happened
+		include ../blocks/modules/protection/protection
+		include ../blocks/modules/footer/footer
+
+block scripts
+	script(src="https://code.jquery.com/jquery-3.6.0.min.js")
+	script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+	script(src="https://unpkg.com/aos@2.3.1/dist/aos.js")
+	script(src='https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js')
+
+	script(src="js/vendor.js")
+	script(src="js/main.js")

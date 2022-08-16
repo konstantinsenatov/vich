@@ -1,0 +1,169 @@
+.protection {
+	padding-top: calc((1920px * 43.2px) / 1728px);
+	padding-bottom: calc((1920px * 182.7px) / 1728px);
+	background: #F5F3F3;
+	overflow: hidden;
+	position: relative;
+	@media (max-width: 1920px){
+		padding-top: calc((1920px * 2.500vw) / 1728px);
+		padding-bottom: calc((1920px * 10.573vw) / 1728px);
+	}
+	@media (max-width: 768px){
+		padding-top: 11.003vw;
+		padding-bottom: 5.729vw;
+	}
+	&__img-wave {
+		position: absolute;
+		z-index: 2;
+		bottom: calc((1920px * -46.8px) / 1728px);
+		right: calc((1920px * -103.5px) / 1728px);
+		width: calc((1920px * 800.1px) / 1728px);
+		height: calc((1920px * 450px) / 1728px);;
+		@media (max-width: 1920px){
+			bottom: calc((1920px * -2.708vw) / 1728px);
+			right: calc((1920px * -5.990vw) / 1728px);
+			width: calc((1920px * 46.302vw) / 1728px);
+			height: calc((1920px * 26.042vw) / 1728px);
+		}
+		@media (max-width: 768px){
+			bottom: -14.240vw;
+			right: -27.130vw;
+			width: 84.115vw;
+			height: 45.266vw;
+		}
+		img {
+			min-width: 100%;
+			max-width: 100%;
+			min-height: 100%;
+			max-height: 100%;
+			transform: rotate(-23deg);
+		}
+	}
+
+	&__img-grid {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		right: calc((1920px * -20px) / 1728px);
+		transform: translate(100%, 0);
+		width: calc((1920px * 570px) / 1728px);
+		height: calc((1920px * 570px) / 1728px);
+		@media (max-width: 1920px){
+			right: calc((1920px * -1.042vw) / 1728px);
+			width: calc((1920px * 29.688vw) / 1728px);
+			height: calc((1920px * 29.688vw) / 1728px);
+		}
+		@media (max-width: 768px){
+			display: none;
+		}
+		img {
+			min-width: 100%;
+			max-width: 100%;
+			min-height: 100%;
+			max-height: 100%;
+		}
+	}
+
+	&__body {
+		position: relative;
+		width: calc((1920px * 1028px) / 1728px);
+		height: calc((1920px * 570px) / 1728px);
+		border: calc((1920px * 1px) / 1728px) solid #DB3738;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 1920px){
+			width: calc((1920px * 53.542vw) / 1728px);
+			height: calc((1920px * 29.688vw) / 1728px);
+			border: calc((1920px * 0.052vw) / 1728px) solid #DB3738;
+		}
+		@media (max-width: 768px){
+			width: 86.625vw;
+			height: 80.599vw;
+		}
+	}
+	
+		&__header {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: calc((1920px * 149px) / 1728px);
+			@media (max-width: 1920px){
+				height: calc((1920px * 7.760vw) / 1728px);
+			}
+			@media (max-width: 768px){
+				height: 21.875vw;
+				font-weight: 500;
+				padding: 0 13vw;
+			}
+		}
+	
+		&__items {
+			background: #FFFFFF;/* 
+			padding: calc((1920px * 30px) / 1728px) calc((1920px * 30px) / 1728px) calc((1920px * 60px) / 1728px);
+			@media (max-width: 1920px){
+				padding: calc((1920px * 1.563vw) / 1728px) calc((1920px * 1.563vw) / 1728px) calc((1920px * 3.125vw) / 1728px);
+			} */
+			flex: 1 1 auto;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: calc((1920px * 15px) / 1728px);
+			@media (max-width: 1920px){
+				margin-top: calc((1920px * 0.781vw) / 1728px);
+			}
+			@media (max-width: 768px){
+				margin-top: 4.557vw;
+			}
+		}
+	
+		&__icon {
+			width: calc((1920px * 47px) / 1728px);
+			height: calc((1920px * 47px) / 1728px);
+			text-align: center;
+			@media (max-width: 1920px){
+				width: calc((1920px * 2.448vw) / 1728px);
+				height: calc((1920px * 2.448vw) / 1728px);
+			}
+			@media (max-width: 768px){
+				width: 4.036vw;
+				height: 4.036vw;
+			}
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	
+		&__text {
+			margin-top: calc((1920px * 10px) / 1728px);
+			font-family: 'FuturaBookC';
+			font-style: normal;
+			font-weight: 400;
+			font-size: calc((1920px * 18px) / 1728px);
+			line-height: calc((1920px * 20px) / 1728px);
+			text-align: center;
+			color: #000000;
+			@media (max-width: 1920px){
+				margin-top: calc((1920px * 0.521vw) / 1728px);
+				font-size: calc((1920px * 0.938vw) / 1728px);
+				line-height: calc((1920px * 1.042vw) / 1728px);
+			}
+			@media (max-width: 768px){
+				font-size: 2.865vw;
+				line-height: 3.255vw;
+				margin-top: 1.823vw;
+				br {
+					display: none;
+				}
+			}
+		}
+}
+

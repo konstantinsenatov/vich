@@ -1,0 +1,173 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+a:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+a {
+	color: inherit
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+.container {
+	width: calc((1920px * 1400px) / 1728px);
+	max-width: 100%;
+	margin: 0 auto;
+	@media (max-width: 1920px){
+		width: calc((1920px * 68vw) / 1728px);
+	}
+	@media (max-width: 768px){
+		width: 91.125vw;
+	}
+}
+.title {
+	font-family: 'Geometria';
+	font-style: normal;
+	font-weight: 700;
+	font-size: calc((1920px * 30px) / 1728px);
+	line-height: calc((1920px * 38px) / 1728px);
+	text-transform: uppercase;
+	color: #DB3738;
+
+	@media (max-width: 1920px) {
+		font-size: calc((1920px * 1.56vw) / 1728px);
+		line-height: calc((1920px * 1.98vw) / 1728px);
+	}
+	@media (max-width: 768px){
+		font-size: 3.750vw;
+		line-height: 4.750vw;
+	}
+
+	span {
+		display: block;
+
+		&:nth-child(2) {
+			margin-top: calc((1920px * 35px) / 1728px);
+
+			@media (max-width: 1920px) {
+				margin-top: calc((1920px * 1.82vw) / 1728px);
+			}
+			@media (max-width: 768px){
+				margin-top: 4.375vw;
+			}
+		}
+	}
+}
+
+@media (min-width: 769px){
+	.show-left.show {
+		position: relative;
+		left: -100px;
+		opacity: 0;
+		transition: all 0.5s ease 0.2s;
+		&.active {
+			left: 0;
+			opacity: 1;
+		}
+	}
+	.show-right.show {
+		position: relative;
+		right: -100px;
+		opacity: 0;
+		transition: all 0.5s ease 0.2s;
+
+		&.active {
+			right: 0;
+			opacity: 1;
+		}
+	}
+}
